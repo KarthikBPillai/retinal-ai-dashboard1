@@ -1,0 +1,128 @@
+.app {
+  min-height: 100vh;
+  padding: 40px;
+  text-align: center;
+  font-family: Arial, sans-serif;
+}
+
+.app h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.app p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+input[type="file"] {
+  margin: 20px;
+}
+
+img {
+  display: block;
+  margin: 20px auto;
+  border-radius: 10px;
+}
+.models {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 30px 0;
+  flex-wrap: wrap;
+}
+
+.model-card {
+  width: 220px;
+  padding: 25px;
+  border-radius: 15px;
+  border: 1px solid #444;
+  background: #1e1e2f;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  text-align: center;
+}
+
+.model-card h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.model-card p {
+  margin: 0;
+  font-size: 16px;
+}
+
+.upload-section {
+  margin: 30px auto;
+  padding: 25px;
+  max-width: 600px;
+  border: 2px dashed #888;
+  border-radius: 15px;
+}
+
+.upload-section h2 {
+  margin-bottom: 15px;
+}
+
+.upload-section input {
+  margin-top: 10px;
+}
+
+button {
+  padding: 12px 25px;
+  margin: 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.results {
+  margin: 30px auto;
+  max-width: 800px;
+}
+
+.results h2 {
+  margin-bottom: 20px;
+}
+
+.result-card {
+  margin: 15px 0;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #444;
+  background: #1e1e2f;
+  text-align: left;
+}
+
+.result-card h3 {
+  margin-bottom: 8px;
+}
+
+.result-card p {
+  margin: 0;
+}button:hover {
+  opacity: 0.85;
+  transform: scale(1.03);
+}
+
+@media (max-width: 700px) {
+  .models {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .model-card {
+    width: 80%;
+  }
+
+  .upload-section {
+    width: 80%;
+  }
+
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+}
+
